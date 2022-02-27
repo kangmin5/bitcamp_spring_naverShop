@@ -1,5 +1,9 @@
 package com.mkweb.api.member.service;
 
+import com.mkweb.api.member.domain.CalcDTO;
+import com.mkweb.api.member.domain.MemberDTO;
+import org.springframework.stereotype.Service;
+
 /**
  * packageName: com.mkweb.api.member.service
  * fileName   :
@@ -11,13 +15,14 @@ package com.mkweb.api.member.service;
  * =====================================
  * 2022-02-11   kangmin5    최초생성
  */
+
 public interface MemberService {
-    void memberList();
-    void memberDetail();
-    void mailSendList();
-    void mailSendRegist();
-    void saveMoneyList();
-    void saveMoneyDetail();
-    void saveMoneyAppend();
-    void saveMoneyDelete();
+
+    String calc(CalcDTO calc);
+
+    String bmi(MemberDTO bmi);
+
+    String grade(MemberDTO grade);
+
+    String login(MemberDTO login);
 }
