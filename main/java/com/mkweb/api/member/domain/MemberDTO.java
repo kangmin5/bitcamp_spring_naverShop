@@ -29,5 +29,7 @@ public class MemberDTO {
     private int eng;
     private int math;
     private String password;
+    private int num;
+    private int number;
 
 }

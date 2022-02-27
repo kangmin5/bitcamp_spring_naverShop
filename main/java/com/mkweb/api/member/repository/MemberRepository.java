@@ -22,4 +22,6 @@ public interface MemberRepository {
     String grade(MemberDTO grade);
 
     String login(MemberDTO login);
+
+    String lotto(MemberDTO lotto);
 }

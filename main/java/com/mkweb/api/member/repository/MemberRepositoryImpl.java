@@ -35,4 +35,10 @@ public class MemberRepositoryImpl implements MemberRepository{
     public String login(MemberDTO login) {
         return null;
     }
+
+    @Override
+    public String lotto(MemberDTO lotto) {
+
+        return null;
+    }
 }

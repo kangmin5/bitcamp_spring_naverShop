@@ -74,5 +74,14 @@ public class MemberServiceImpl implements MemberService{
         return String.format(" %s님의 비번은 %s 입니다.",login.getName(),login.getPassword());
     }
 
+    @Override
+    public String lotto(MemberDTO lotto) {
+            //리액트에서 lotto[]값으로 보내왔다.
+            int num = lotto.getNum();
+            
+
+        return String.format(" %d",lotto.getNum());
+    }
+
 
 }

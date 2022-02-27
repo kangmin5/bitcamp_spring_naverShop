@@ -43,5 +43,9 @@ public class MemberController {
     public String login(@RequestBody MemberDTO login){
         return service.login(login);
     }
+    @PostMapping("/lotto")
+    public String lotto(@RequestBody MemberDTO lotto){
+        return service.lotto(lotto);
+    }
 }
 
